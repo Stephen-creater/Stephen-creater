@@ -2,6 +2,8 @@
 import { onMounted, onUnmounted } from 'vue'
 import { gsap } from 'gsap'
 
+const publicAsset = (path) => `${import.meta.env.BASE_URL}${path}`
+
 let portfolioController = null
 let activeCategory = 'all'
 
@@ -655,7 +657,7 @@ onUnmounted(() => {
         <div class="project-card bg-gray-900 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300" data-category="wechat" data-year="year-25" data-date="2025-10-18">
           <div class="h-48 md:h-56 overflow-hidden">
             <img 
-              src="/article_images/%E3%80%9025.10.18%E3%80%91%E5%87%A0%E5%8D%81%E4%BA%BF%E5%B9%B4%E7%9A%84%E6%BC%94%E5%8C%96%EF%BC%8C%E5%87%A0%E5%8D%81%E5%B9%B4%E5%86%85%E2%80%9C%E7%83%A7%E2%80%9D%E5%AE%8C%EF%BC%9F.png" 
+              :src="publicAsset('article_images/%E3%80%9025.10.18%E3%80%91%E5%87%A0%E5%8D%81%E4%BA%BF%E5%B9%B4%E7%9A%84%E6%BC%94%E5%8C%96%EF%BC%8C%E5%87%A0%E5%8D%81%E5%B9%B4%E5%86%85%E2%80%9C%E7%83%A7%E2%80%9D%E5%AE%8C%EF%BC%9F.png')" 
               alt="几十亿年的演化，几十年内烧完" 
               class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
             >
@@ -693,7 +695,7 @@ onUnmounted(() => {
         <div class="project-card bg-gray-900 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300" data-category="wechat" data-year="year-25" data-date="2025-10-19">
           <div class="h-48 md:h-56 overflow-hidden">
             <img 
-              src="/article_images/%E3%80%9025.10.19%E3%80%91%E4%BB%8EiPhone%2017%EF%BC%8C%E5%88%B0%E2%80%9C%E7%BB%88%E5%B1%80%E2%80%9D%E7%9A%84AI%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E4%BB%AC%E4%B8%8D%E8%83%BD%E8%90%BD%E4%B8%8B%EF%BC%9F.png" 
+              :src="publicAsset('article_images/%E3%80%9025.10.19%E3%80%91%E4%BB%8EiPhone%2017%EF%BC%8C%E5%88%B0%E2%80%9C%E7%BB%88%E5%B1%80%E2%80%9D%E7%9A%84AI%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E4%BB%AC%E4%B8%8D%E8%83%BD%E8%90%BD%E4%B8%8B%EF%BC%9F.png')" 
               alt="从iPhone 17 到终局的 AI" 
               class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
             >
@@ -731,7 +733,7 @@ onUnmounted(() => {
         <div class="project-card bg-gray-900 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300" data-category="wechat" data-year="year-25" data-date="2025-10-26">
           <div class="h-48 md:h-56 overflow-hidden">
             <img 
-              src="/article_images/%E3%80%9025.10.26%E3%80%91%E4%BD%A0%E7%9A%84%E2%80%9C%E5%A4%A9%E8%B5%8B%E2%80%9D%E5%92%8C%E2%80%9C%E7%83%AD%E7%88%B1%E2%80%9D%EF%BC%8C%E5%8F%AF%E8%83%BD%E8%A2%AB%E6%97%B6%E4%BB%A3%E5%92%8C%E7%AE%97%E6%B3%95%E2%80%9C%E6%9D%80%E6%AD%BB%E2%80%9D.png" 
+              :src="publicAsset('article_images/%E3%80%9025.10.26%E3%80%91%E4%BD%A0%E7%9A%84%E2%80%9C%E5%A4%A9%E8%B5%8B%E2%80%9D%E5%92%8C%E2%80%9C%E7%83%AD%E7%88%B1%E2%80%9D%EF%BC%8C%E5%8F%AF%E8%83%BD%E8%A2%AB%E6%97%B6%E4%BB%A3%E5%92%8C%E7%AE%97%E6%B3%95%E2%80%9C%E6%9D%80%E6%AD%BB%E2%80%9D.png')" 
               alt="你的天赋和热爱可能被时代和算法杀死" 
               class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
             >
@@ -761,7 +763,7 @@ onUnmounted(() => {
         <div class="project-card bg-gray-900 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300" data-category="wechat" data-year="year-25" data-date="2025-10-27">
           <div class="h-48 md:h-56 overflow-hidden">
             <img 
-              src="/article_images/%E3%80%9025.10.27%E3%80%91%E3%80%8AAI%202027%E3%80%8B%EF%BC%9A%E4%B8%80%E4%BB%BD%E8%AE%A9%E4%BA%BA%E6%AF%9B%E9%AA%A8%E6%82%9A%E7%84%B6%E7%9A%84%E2%80%9C%E6%9C%AA%E6%9D%A5%E7%BC%96%E5%B9%B4%E5%8F%B2%E2%80%9D.png" 
+              :src="publicAsset('article_images/%E3%80%9025.10.27%E3%80%91%E3%80%8AAI%202027%E3%80%8B%EF%BC%9A%E4%B8%80%E4%BB%BD%E8%AE%A9%E4%BA%BA%E6%AF%9B%E9%AA%A8%E6%82%9A%E7%84%B6%E7%9A%84%E2%80%9C%E6%9C%AA%E6%9D%A5%E7%BC%96%E5%B9%B4%E5%8F%B2%E2%80%9D.png')" 
               alt="AI 2027 未来编年史" 
               class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
             >
@@ -778,7 +780,7 @@ onUnmounted(() => {
         <!-- 项目: OpenAI的2028时间表，与白领的“终局” -->
         <div class="project-card bg-gray-900 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300" data-category="wechat" data-year="year-25" data-date="2025-11-01">
           <div class="h-48 md:h-56 overflow-hidden">
-            <img src="/article_images/%E3%80%9025.11.1%E3%80%91OpenAI%E7%9A%842028%E6%97%B6%E9%97%B4%E8%A1%A8%EF%BC%8C%E4%B8%8E%E7%99%BD%E9%A2%86%E7%9A%84%E2%80%9C%E7%BB%88%E5%B1%80%E2%80%9D.png" alt="OpenAI 的 2028 时间表" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+            <img :src="publicAsset('article_images/%E3%80%9025.11.1%E3%80%91OpenAI%E7%9A%842028%E6%97%B6%E9%97%B4%E8%A1%A8%EF%BC%8C%E4%B8%8E%E7%99%BD%E9%A2%86%E7%9A%84%E2%80%9C%E7%BB%88%E5%B1%80%E2%80%9D.png')" alt="OpenAI 的 2028 时间表" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
           </div>
           <div class="p-4 md:p-5">
             <h3 class="text-xl font-bold mb-2">OpenAI的2028时间表，与白领的“终局”</h3>
@@ -791,7 +793,7 @@ onUnmounted(() => {
 
         <!-- 项目: 我的宇宙观 -->
         <div class="project-card bg-gray-900 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300" data-category="wechat" data-year="year-25" data-date="2025-11-02">
-          <div class="h-48 md:h-56 overflow-hidden"><img src="/article_images/%E3%80%9025.11.2%E3%80%91%E6%88%91%E7%9A%84%E5%AE%87%E5%AE%99%E8%A7%82.png" alt="我的宇宙观" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"></div>
+          <div class="h-48 md:h-56 overflow-hidden"><img :src="publicAsset('article_images/%E3%80%9025.11.2%E3%80%91%E6%88%91%E7%9A%84%E5%AE%87%E5%AE%99%E8%A7%82.png')" alt="我的宇宙观" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"></div>
           <div class="p-4 md:p-5">
             <h3 class="text-xl font-bold mb-2">我的宇宙观</h3>
             <p class="text-gray-400 mb-3 text-sm">从个体生命、时间尺度与社会结构出发，梳理自己理解世界、理解成长以及理解未来的底层框架，属于人生系统主题下的核心表达。</p>
@@ -803,7 +805,7 @@ onUnmounted(() => {
 
         <!-- 项目: 我的偶像：Geoffrey Hinton和llya Sutskever -->
         <div class="project-card bg-gray-900 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300" data-category="wechat" data-year="year-25" data-date="2025-11-08">
-          <div class="h-48 md:h-56 overflow-hidden"><img src="/article_images/%E3%80%9025.11.8%E3%80%91%E6%88%91%E7%9A%84%E5%81%B6%E5%83%8F%EF%BC%9AGeoffrey%20Hinton%E5%92%8Cllya%20Sutskever.png" alt="我的偶像 Geoffrey Hinton 和 Ilya Sutskever" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"></div>
+          <div class="h-48 md:h-56 overflow-hidden"><img :src="publicAsset('article_images/%E3%80%9025.11.8%E3%80%91%E6%88%91%E7%9A%84%E5%81%B6%E5%83%8F%EF%BC%9AGeoffrey%20Hinton%E5%92%8Cllya%20Sutskever.png')" alt="我的偶像 Geoffrey Hinton 和 Ilya Sutskever" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"></div>
           <div class="p-4 md:p-5">
             <h3 class="text-xl font-bold mb-2">我的偶像：Geoffrey Hinton和llya Sutskever</h3>
             <p class="text-gray-400 mb-3 text-sm">以两位关键人物的研究路径与思想影响为线索，回看深度学习浪潮如何形成，以及他们为何会成为理解 AGI 时代时绕不开的坐标。</p>
@@ -815,7 +817,7 @@ onUnmounted(() => {
 
         <!-- 项目: AI大洗牌：从移动互联网的冬天，到AI的春天 -->
         <div class="project-card bg-gray-900 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300" data-category="wechat" data-year="year-25" data-date="2025-11-09">
-          <div class="h-48 md:h-56 overflow-hidden"><img src="/article_images/%E3%80%9025.11.9%E3%80%91AI%E5%A4%A7%E6%B4%97%E7%89%8C%EF%BC%9A%E4%BB%8E%E7%A7%BB%E5%8A%A8%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E5%86%AC%E5%A4%A9%EF%BC%8C%E5%88%B0AI%E7%9A%84%E6%98%A5%E5%A4%A9.png" alt="AI大洗牌" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"></div>
+          <div class="h-48 md:h-56 overflow-hidden"><img :src="publicAsset('article_images/%E3%80%9025.11.9%E3%80%91AI%E5%A4%A7%E6%B4%97%E7%89%8C%EF%BC%9A%E4%BB%8E%E7%A7%BB%E5%8A%A8%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E5%86%AC%E5%A4%A9%EF%BC%8C%E5%88%B0AI%E7%9A%84%E6%98%A5%E5%A4%A9.png')" alt="AI大洗牌" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"></div>
           <div class="p-4 md:p-5">
             <h3 class="text-xl font-bold mb-2">AI大洗牌：从移动互联网的冬天，到AI的春天</h3>
             <p class="text-gray-400 mb-3 text-sm">把 AI 周期放回更长的产业史中，比较移动互联网退潮与 AI 崛起的结构差异，解释为什么这次变化更像重置，而不只是一次热点轮动。</p>
@@ -827,7 +829,7 @@ onUnmounted(() => {
 
         <!-- 项目: 你愿做清朝皇帝，还是3025年的普通人？ -->
         <div class="project-card bg-gray-900 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300" data-category="wechat" data-year="year-25" data-date="2025-11-15">
-          <div class="h-48 md:h-56 overflow-hidden"><img src="/article_images/%E3%80%9025.11.15%E3%80%91%E4%BD%A0%E6%84%BF%E5%81%9A%E6%B8%85%E6%9C%9D%E7%9A%87%E5%B8%9D%EF%BC%8C%E8%BF%98%E6%98%AF3025%E5%B9%B4%E7%9A%84%E6%99%AE%E9%80%9A%E4%BA%BA%EF%BC%9F.png" alt="清朝皇帝还是3025年普通人" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"></div>
+          <div class="h-48 md:h-56 overflow-hidden"><img :src="publicAsset('article_images/%E3%80%9025.11.15%E3%80%91%E4%BD%A0%E6%84%BF%E5%81%9A%E6%B8%85%E6%9C%9D%E7%9A%87%E5%B8%9D%EF%BC%8C%E8%BF%98%E6%98%AF3025%E5%B9%B4%E7%9A%84%E6%99%AE%E9%80%9A%E4%BA%BA%EF%BC%9F.png')" alt="清朝皇帝还是3025年普通人" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"></div>
           <div class="p-4 md:p-5">
             <h3 class="text-xl font-bold mb-2">你愿做清朝皇帝，还是3025年的普通人？</h3>
             <p class="text-gray-400 mb-3 text-sm">借一个极具反差的设问，重新讨论技术进步、生活质量与文明红利之间的关系，帮助读者从直觉偏好跳到长期主义视角思考未来。</p>
@@ -839,7 +841,7 @@ onUnmounted(() => {
 
         <!-- 项目: 你是生产者，还是被降维打击的消费者？ -->
         <div class="project-card bg-gray-900 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300" data-category="wechat" data-year="year-25" data-date="2025-11-16">
-          <div class="h-48 md:h-56 overflow-hidden"><img src="/article_images/%E3%80%9025.11.16%E3%80%91%E4%BD%A0%E6%98%AF%E7%94%9F%E4%BA%A7%E8%80%85%EF%BC%8C%E8%BF%98%E6%98%AF%E8%A2%AB%E9%99%8D%E7%BB%B4%E6%89%93%E5%87%BB%E7%9A%84%E6%B6%88%E8%B4%B9%E8%80%85%EF%BC%9F.png" alt="生产者还是消费者" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"></div>
+          <div class="h-48 md:h-56 overflow-hidden"><img :src="publicAsset('article_images/%E3%80%9025.11.16%E3%80%91%E4%BD%A0%E6%98%AF%E7%94%9F%E4%BA%A7%E8%80%85%EF%BC%8C%E8%BF%98%E6%98%AF%E8%A2%AB%E9%99%8D%E7%BB%B4%E6%89%93%E5%87%BB%E7%9A%84%E6%B6%88%E8%B4%B9%E8%80%85%EF%BC%9F.png')" alt="生产者还是消费者" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"></div>
           <div class="p-4 md:p-5">
             <h3 class="text-xl font-bold mb-2">你是生产者，还是被降维打击的消费者？</h3>
             <p class="text-gray-400 mb-3 text-sm">从个人能力结构与系统位置出发，讨论在 AI 与平台经济时代，创造价值的人和被动消费的人将面对怎样越来越大的分化。</p>
@@ -851,7 +853,7 @@ onUnmounted(() => {
 
         <!-- 项目: 有命赚钱没命花——完全错误的消费主义价值导向 -->
         <div class="project-card bg-gray-900 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300" data-category="wechat" data-year="year-25" data-date="2025-11-22">
-          <div class="h-48 md:h-56 overflow-hidden"><img src="/article_images/%E3%80%9025.11.22%E3%80%91%E6%9C%89%E5%91%BD%E8%B5%9A%E9%92%B1%E6%B2%A1%E5%91%BD%E8%8A%B1%E2%80%94%E2%80%94%E5%AE%8C%E5%85%A8%E9%94%99%E8%AF%AF%E7%9A%84%E6%B6%88%E8%B4%B9%E4%B8%BB%E4%B9%89%E4%BB%B7%E5%80%BC%E5%AF%BC%E5%90%91.png" alt="有命赚钱没命花" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"></div>
+          <div class="h-48 md:h-56 overflow-hidden"><img :src="publicAsset('article_images/%E3%80%9025.11.22%E3%80%91%E6%9C%89%E5%91%BD%E8%B5%9A%E9%92%B1%E6%B2%A1%E5%91%BD%E8%8A%B1%E2%80%94%E2%80%94%E5%AE%8C%E5%85%A8%E9%94%99%E8%AF%AF%E7%9A%84%E6%B6%88%E8%B4%B9%E4%B8%BB%E4%B9%89%E4%BB%B7%E5%80%BC%E5%AF%BC%E5%90%91.png')" alt="有命赚钱没命花" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"></div>
           <div class="p-4 md:p-5">
             <h3 class="text-xl font-bold mb-2">有命赚钱没命花——完全错误的消费主义价值导向</h3>
             <p class="text-gray-400 mb-3 text-sm">反思消费主义叙事如何塑造我们的时间、健康与欲望分配，讨论一种更长期、更不被市场裹挟的人生价值排序方式。</p>
@@ -864,7 +866,7 @@ onUnmounted(() => {
         <!-- 项目: n8n自动新闻爬取系统 -->
         <div class="project-card bg-gray-900 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300" data-category="n8n" data-year="year-25" data-date="2025-12-31">
           <div class="h-48 md:h-56 overflow-hidden">
-            <img src="/article_images/n8n%E8%87%AA%E5%8A%A8%E6%96%B0%E9%97%BB%E7%88%AC%E5%8F%96%E7%B3%BB%E7%BB%9F.png" alt="n8n自动新闻爬取系统" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+            <img :src="publicAsset('article_images/n8n%E8%87%AA%E5%8A%A8%E6%96%B0%E9%97%BB%E7%88%AC%E5%8F%96%E7%B3%BB%E7%BB%9F.png')" alt="n8n自动新闻爬取系统" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
           </div>
           <div class="p-4 md:p-5">
             <h3 class="text-xl font-bold mb-2">n8n自动新闻爬取系统</h3>
@@ -891,7 +893,7 @@ onUnmounted(() => {
         <!-- 项目: n8n学生公域竞品账号爬虫 -->
         <div class="project-card bg-gray-900 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300" data-category="n8n" data-year="year-25" data-date="2025-12-30">
           <div class="h-48 md:h-56 overflow-hidden">
-            <img src="/article_images/n8n%E5%AD%A6%E7%94%9F%E5%85%AC%E5%9F%9F%E7%AB%9E%E5%93%81%E8%B4%A6%E5%8F%B7%E7%88%AC%E8%99%AB.png" alt="n8n学生公域竞品账号爬虫" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+            <img :src="publicAsset('article_images/n8n%E5%AD%A6%E7%94%9F%E5%85%AC%E5%9F%9F%E7%AB%9E%E5%93%81%E8%B4%A6%E5%8F%B7%E7%88%AC%E8%99%AB.png')" alt="n8n学生公域竞品账号爬虫" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
           </div>
           <div class="p-4 md:p-5">
             <h3 class="text-xl font-bold mb-2">n8n学生公域竞品账号爬虫</h3>
@@ -918,7 +920,7 @@ onUnmounted(() => {
         <!-- 项目: 面霸pro -->
         <div class="project-card bg-gray-900 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300" data-category="startup" data-year="year-26" data-date="2026-12-31">
           <div class="h-48 md:h-56 overflow-hidden">
-            <img src="/article_images/%E9%9D%A2%E9%9C%B8pro.png" alt="面霸pro" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+            <img :src="publicAsset('article_images/%E9%9D%A2%E9%9C%B8pro.png')" alt="面霸pro" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
           </div>
           <div class="p-4 md:p-5">
             <h3 class="text-xl font-bold mb-2">面霸pro</h3>
@@ -941,9 +943,81 @@ onUnmounted(() => {
           </div>
         </div>
 
-        <!-- 项目: All IN创业前，先来这里“死”一次 -->
+                <!-- 项目: 一文讲透KV Cache和Prompt Caching（大白话版） -->
+        <div class="project-card bg-gray-900 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300" data-category="wechat" data-year="year-26" data-date="2026-08-23">
+          <div class="h-48 md:h-56 overflow-hidden"><img :src="publicAsset('article_images/26.08.23-kv-cache-prompt-caching.jpg')" alt="KV Cache 与 Prompt Caching" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"></div>
+          <div class="p-4 md:p-5">
+            <h3 class="text-xl font-bold mb-2">一文讲透KV Cache和Prompt Caching（大白话版）</h3>
+            <p class="text-gray-400 mb-3 text-sm">用大白话从 Attention 的计算过程讲起，拆解 KV Cache 如何省掉重复计算、Prompt Caching 又如何把缓存复用到多次请求，看完包能理解。</p>
+            <div class="flex flex-wrap gap-1.5 mb-4"><span class="text-xs bg-gray-800 text-accent px-2.5 py-0.5 rounded-full">26年</span><span class="text-xs bg-gray-800 text-accent px-2.5 py-0.5 rounded-full">公众号</span><span class="text-xs bg-gray-800 text-accent px-2.5 py-0.5 rounded-full">大模型原理</span></div>
+            <a href="https://mp.weixin.qq.com/s/NHcBOItKPuRvNe4gKScpTg" target="_blank" class="text-accent inline-flex items-center text-sm">访问文章<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg></a>
+            <div class="flex justify-between items-center mt-4"><button class="text-gray-400 hover:text-white transition-colors"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" /></svg></button><button class="text-gray-400 hover:text-white transition-colors share-btn" title="复制链接"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" /></svg></button></div>
+          </div>
+        </div>
+
+        <!-- 项目: RAG就是一坨，知识库的版本答案叫Skill的references -->
+        <div class="project-card bg-gray-900 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300" data-category="wechat" data-year="year-26" data-date="2026-08-21">
+          <div class="h-48 md:h-56 overflow-hidden"><img :src="publicAsset('article_images/26.08.21-rag-vs-skill-references.jpg')" alt="RAG 与 Skill 的 references" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"></div>
+          <div class="p-4 md:p-5">
+            <h3 class="text-xl font-bold mb-2">RAG就是一坨，知识库的版本答案叫Skill的references</h3>
+            <p class="text-gray-400 mb-3 text-sm">对比切片 + 向量检索的 RAG 与 Skill references 的渐进式披露，解释为什么知识库的版本答案变了，以及 RAG 更适合封装为 MCP 挂在 Agent 外面。</p>
+            <div class="flex flex-wrap gap-1.5 mb-4"><span class="text-xs bg-gray-800 text-accent px-2.5 py-0.5 rounded-full">26年</span><span class="text-xs bg-gray-800 text-accent px-2.5 py-0.5 rounded-full">公众号</span><span class="text-xs bg-gray-800 text-accent px-2.5 py-0.5 rounded-full">Skills</span></div>
+            <a href="https://mp.weixin.qq.com/s/4Wd2bMaHN20rGh2LFOXO9w" target="_blank" class="text-accent inline-flex items-center text-sm">访问文章<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg></a>
+            <div class="flex justify-between items-center mt-4"><button class="text-gray-400 hover:text-white transition-colors"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" /></svg></button><button class="text-gray-400 hover:text-white transition-colors share-btn" title="复制链接"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" /></svg></button></div>
+          </div>
+        </div>
+
+        <!-- 项目: 企业级 Skills的最佳实践与避坑指南 -->
+        <div class="project-card bg-gray-900 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300" data-category="wechat" data-year="year-26" data-date="2026-08-19">
+          <div class="h-48 md:h-56 overflow-hidden"><img :src="publicAsset('article_images/26.08.19-enterprise-skills.jpg')" alt="企业级 Skills 最佳实践" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"></div>
+          <div class="p-4 md:p-5">
+            <h3 class="text-xl font-bold mb-2">企业级 Skills的最佳实践与避坑指南</h3>
+            <p class="text-gray-400 mb-3 text-sm">总结企业级 Skills 治理的最佳实践与避坑指南：既做 AI 专家，又做业务专家，把 20-40 分的 Skill 一步步迭代到 90 分。</p>
+            <div class="flex flex-wrap gap-1.5 mb-4"><span class="text-xs bg-gray-800 text-accent px-2.5 py-0.5 rounded-full">26年</span><span class="text-xs bg-gray-800 text-accent px-2.5 py-0.5 rounded-full">公众号</span><span class="text-xs bg-gray-800 text-accent px-2.5 py-0.5 rounded-full">Skills</span></div>
+            <a href="https://mp.weixin.qq.com/s/MNjyf6TBjJ0kXgmdyHz76Q" target="_blank" class="text-accent inline-flex items-center text-sm">访问文章<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg></a>
+            <div class="flex justify-between items-center mt-4"><button class="text-gray-400 hover:text-white transition-colors"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" /></svg></button><button class="text-gray-400 hover:text-white transition-colors share-btn" title="复制链接"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" /></svg></button></div>
+          </div>
+        </div>
+
+        <!-- 项目: FDE 的本质：问题和答案都不确定时，如何同时收敛两端 -->
+        <div class="project-card bg-gray-900 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300" data-category="wechat" data-year="year-26" data-date="2026-08-18">
+          <div class="h-48 md:h-56 overflow-hidden"><img :src="publicAsset('article_images/26.08.18-fde.jpg')" alt="FDE 的本质" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"></div>
+          <div class="p-4 md:p-5">
+            <h3 class="text-xl font-bold mb-2">FDE 的本质：问题和答案都不确定时，如何同时收敛两端</h3>
+            <p class="text-gray-400 mb-3 text-sm">一文讲透 FDE 的本质：在需求和产品都未确定时深入客户现场，通过快速工程验证让业务问题与产品能力同时收敛，既交付业务结果，也沉淀可复用的产品能力。</p>
+            <div class="flex flex-wrap gap-1.5 mb-4"><span class="text-xs bg-gray-800 text-accent px-2.5 py-0.5 rounded-full">26年</span><span class="text-xs bg-gray-800 text-accent px-2.5 py-0.5 rounded-full">公众号</span><span class="text-xs bg-gray-800 text-accent px-2.5 py-0.5 rounded-full">AI FDE</span></div>
+            <a href="https://mp.weixin.qq.com/s/4zVkczWJSEyHwo_1Bm-MbA" target="_blank" class="text-accent inline-flex items-center text-sm">访问文章<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg></a>
+            <div class="flex justify-between items-center mt-4"><button class="text-gray-400 hover:text-white transition-colors"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" /></svg></button><button class="text-gray-400 hover:text-white transition-colors share-btn" title="复制链接"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" /></svg></button></div>
+          </div>
+        </div>
+
+        <!-- 项目: 1h速通Harness Engineering版本答案——Claude Code （上） -->
+        <div class="project-card bg-gray-900 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300" data-category="wechat" data-year="year-26" data-date="2026-06-07">
+          <div class="h-48 md:h-56 overflow-hidden"><img :src="publicAsset('article_images/26.06.07-harness-engineering-claude-code.jpg')" alt="Harness Engineering 与 Claude Code" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"></div>
+          <div class="p-4 md:p-5">
+            <h3 class="text-xl font-bold mb-2">1h速通Harness Engineering版本答案——Claude Code （上）</h3>
+            <p class="text-gray-400 mb-3 text-sm">深度拆解 Claude Code：基于 Learn Claude Code 项目二次开发中文学习版，从最小 Agent Loop 讲起，梳理 Harness Engineering 的核心架构与机制。</p>
+            <div class="flex flex-wrap gap-1.5 mb-4"><span class="text-xs bg-gray-800 text-accent px-2.5 py-0.5 rounded-full">26年</span><span class="text-xs bg-gray-800 text-accent px-2.5 py-0.5 rounded-full">公众号</span><span class="text-xs bg-gray-800 text-accent px-2.5 py-0.5 rounded-full">Claude Code</span></div>
+            <a href="https://mp.weixin.qq.com/s/qnSwFJxsQ5eBoFjqqS-mvg" target="_blank" class="text-accent inline-flex items-center text-sm">访问文章<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg></a>
+            <div class="flex justify-between items-center mt-4"><button class="text-gray-400 hover:text-white transition-colors"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" /></svg></button><button class="text-gray-400 hover:text-white transition-colors share-btn" title="复制链接"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" /></svg></button></div>
+          </div>
+        </div>
+
+        <!-- 项目: 做了一个提醒 Skill，专治久坐、缺水和脑子发胀 -->
+        <div class="project-card bg-gray-900 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300" data-category="wechat" data-year="year-26" data-date="2026-05-26">
+          <div class="h-48 md:h-56 overflow-hidden"><img :src="publicAsset('article_images/26.05.26-reminder-skill.jpg')" alt="提醒 Skill" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"></div>
+          <div class="p-4 md:p-5">
+            <h3 class="text-xl font-bold mb-2">做了一个提醒 Skill，专治久坐、缺水和脑子发胀</h3>
+            <p class="text-gray-400 mb-3 text-sm">用 Codex 手搓一个轻量的喝水 + 活动定时提醒 Skill，只在电脑亮屏时计时，专治长时间久坐、缺水和脑子发胀，工作学习效率至少提高 2 倍。</p>
+            <div class="flex flex-wrap gap-1.5 mb-4"><span class="text-xs bg-gray-800 text-accent px-2.5 py-0.5 rounded-full">26年</span><span class="text-xs bg-gray-800 text-accent px-2.5 py-0.5 rounded-full">公众号</span><span class="text-xs bg-gray-800 text-accent px-2.5 py-0.5 rounded-full">Skills</span></div>
+            <a href="https://mp.weixin.qq.com/s/DZSohRTVNFrd6Fmicygtqg" target="_blank" class="text-accent inline-flex items-center text-sm">访问文章<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg></a>
+            <div class="flex justify-between items-center mt-4"><button class="text-gray-400 hover:text-white transition-colors"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" /></svg></button><button class="text-gray-400 hover:text-white transition-colors share-btn" title="复制链接"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" /></svg></button></div>
+          </div>
+        </div>
+
+<!-- 项目: All IN创业前，先来这里“死”一次 -->
         <div class="project-card bg-gray-900 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300" data-category="wechat" data-year="year-26" data-date="2026-03-23">
-          <div class="h-48 md:h-56 overflow-hidden"><img src="/article_images/%E3%80%9026.3.23%E3%80%91All%20IN%E5%88%9B%E4%B8%9A%E5%89%8D%EF%BC%8C%E5%85%88%E6%9D%A5%E8%BF%99%E9%87%8C%E2%80%9C%E6%AD%BB%E2%80%9D%E4%B8%80%E6%AC%A1.png" alt="All IN 创业前先来这里死一次" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"></div>
+          <div class="h-48 md:h-56 overflow-hidden"><img :src="publicAsset('article_images/%E3%80%9026.3.23%E3%80%91All%20IN%E5%88%9B%E4%B8%9A%E5%89%8D%EF%BC%8C%E5%85%88%E6%9D%A5%E8%BF%99%E9%87%8C%E2%80%9C%E6%AD%BB%E2%80%9D%E4%B8%80%E6%AC%A1.png')" alt="All IN 创业前先来这里死一次" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"></div>
           <div class="p-4 md:p-5">
             <h3 class="text-xl font-bold mb-2">All IN创业前，先来这里“死”一次</h3>
             <p class="text-gray-400 mb-3 text-sm">产品体验链接【更新后】https://startup-48h-survival-game.vercel.app/</p>

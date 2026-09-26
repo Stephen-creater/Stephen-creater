@@ -2,6 +2,8 @@
 import { onMounted, onUnmounted } from 'vue'
 import { gsap } from 'gsap'
 
+const publicAsset = (path) => `${import.meta.env.BASE_URL}${path}`
+
 const exploreCards = [
   {
     number: '01',
@@ -117,7 +119,7 @@ onUnmounted(() => {
 
           <div class="hero-illustration">
             <img
-              src="/hero-illustration.png"
+              :src="publicAsset('hero-illustration.png')"
               alt="AI × 设计"
               class="hero-illustration__img"
               draggable="false"

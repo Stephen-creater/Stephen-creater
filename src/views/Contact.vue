@@ -1,6 +1,8 @@
 <script setup>
 import { onMounted, onUnmounted } from 'vue'
 
+const publicAsset = (path) => `${import.meta.env.BASE_URL}${path}`
+
 let contactController = null
 let faqObserver = null
 
@@ -204,7 +206,7 @@ let faqObserver = null
               <div class="text-center">
                 <p class="text-gray-400 mb-2 text-sm">扫描下方二维码添加</p>
                 <div class="qr-container mx-auto">
-                  <img src="/assets/images/wechat.jpg" alt="微信二维码" class="w-full h-full object-contain">
+                  <img :src="publicAsset('assets/images/wechat.jpg')" alt="微信二维码" class="w-full h-full object-contain">
                 </div>
               </div>
             </div>
