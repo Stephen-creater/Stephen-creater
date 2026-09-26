@@ -31,7 +31,7 @@ const exploreCards = [
 const nowItems = [
   { label: '工作', text: '以 AI FDE 的方式，在 AI 创业团队做业务落地：内容自动化与 AI 课程。' },
   { label: '开源', text: '维护 stephen-skills，沉淀我自己高频使用的 15 个 AI Skills。', href: 'https://github.com/Stephen-creater/stephen-skills' },
-  { label: '写作', text: '持续输出 Harness Engineering、Skills、Agent 与 AI 产品的思考。', to: '/portfolio' },
+  { label: '写作', text: '持续输出 Harness Engineering、Skills、Agent 与 AI 产品的思考。', href: 'https://my.feishu.cn/wiki/ROodwcFqCifsTskEkHrcp95EnMh?table=tblc1Yo7L4Hl64Aw&view=vewbPqPWIX' },
 ]
 
 let heroTimeline = null
