@@ -201,6 +201,25 @@ let faqObserver = null
               <div class="copy-tooltip">已复制!</div>
             </div>
             
+            <!-- GitHub -->
+            <div class="contact-method relative">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 00-1.3-3.2 4.2 4.2 0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 00-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 00-.1 3.2A4.6 4.6 0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21" />
+                </svg>
+              </div>
+              <div class="contact-method__content">
+                <h3 class="text-base font-medium">GitHub</h3>
+                <a href="https://github.com/Stephen-creater" target="_blank" rel="noreferrer" class="text-gray-400 text-sm hover:text-accent">github.com/Stephen-creater</a>
+              </div>
+              <button class="copy-btn p-2" data-copy="https://github.com/Stephen-creater" aria-label="复制 GitHub 链接">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+              </button>
+              <div class="copy-tooltip">已复制!</div>
+            </div>
+
             <!-- QR Code -->
             <div class="contact-qr">
               <div class="text-center">
@@ -240,7 +259,7 @@ let faqObserver = null
               </div>
             </div>
             <div class="faq-answer">
-              <p>我是杭电 27 届学生，现在最想成为的人，是 AI 产品架构师。</p>
+              <p>我是杭电 27 届学生，现在的定位是 AI FDE &amp; AI PM：深入真实业务，把 AI 能力做成能落地、能复用的产品和交付。</p>
               <p>如果要再补一句，我大概算是一个脚踏实地的理想主义者吧。一边学技术、做产品、写内容，一边又很执着地相信，AI 会真正改变这个时代。现在的我，还在路上，但方向已经非常清楚了。</p>
             </div>
           </div>
@@ -275,7 +294,7 @@ let faqObserver = null
             </div>
             <div class="faq-answer">
               <p>我大部分时间都花在三件事上：做 AI 产品、学最新的 AI 技术、持续写内容。</p>
-              <p>前一段时间，我在携程 AI 团队做过 4 个半月的出海业务，也接触过早期投资，还投出了人生里的第一个项目。现在我更想把注意力放回自己身上，继续做一些真正属于自己的小产品。</p>
+              <p>过去一年，我在携程 AI 团队做过 4 个半月的出海业务，用 n8n 搭了热点新闻和爆款视频的自动采集系统；之后在 AI 创业团队里做内容自动化和 AI 课程，也和队友拿了 AdventureX 2026 的铜奖。平时用得顺手的 Skills，我都开源在了 GitHub 上。</p>
               <p>对我来说，“折腾”不是瞎忙，而是在不断试着把想法变成作品，把输入变成结构，把兴趣变成长期积累。</p>
             </div>
           </div>
@@ -292,7 +311,7 @@ let faqObserver = null
             </div>
             <div class="faq-answer">
               <p>我一直在搭自己的知识库。</p>
-              <p>我会把项目、写作、课程、信息源、投资思考，还有很多日常反思慢慢沉淀下来。因为我越来越觉得，人生其实就是一个可以持续迭代的系统。</p>
+              <p>我把它分成了 11 个板块：AI、项目、日常记录、课程、信息源、财务、健康……本质上是把自己当作一家公司来运营。因为我越来越觉得，人生其实就是一个可以持续迭代的系统。</p>
               <p>很多东西当下看起来很碎，但只要你愿意长期记录、复盘、调整，最后它们会慢慢连成你的方法论，也会变成你自己的背景板。</p>
               <p>所以某种程度上，我不是在“记笔记”，我是在给未来的自己留线索。</p>
             </div>

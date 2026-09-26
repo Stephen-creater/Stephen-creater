@@ -199,7 +199,7 @@ onUnmounted(() => {
           我的作品集
         </h1>
         <p class="page-summary" style="margin-left: auto; margin-right: auto;">
-          探索我设计和开发的各类项目，包括游戏、工具应用以及AI相关作品，每一个作品都凝聚了创意和技术的结晶。
+          AI 产品、开源 Skills、比赛作品与公众号文章，按时间倒序排列。
         </p>
         <div class="page-hero__divider"></div>
         
@@ -215,6 +215,7 @@ onUnmounted(() => {
           <button class="filter-btn px-4 py-1.5 bg-gray-800 rounded-lg transition-colors text-white text-sm" data-category="year-25">25年</button>
           <button class="filter-btn px-4 py-1.5 bg-gray-800 rounded-lg transition-colors text-white text-sm" data-category="year-24">24年</button>
           <button class="filter-btn px-4 py-1.5 bg-gray-800 rounded-lg transition-colors text-white text-sm" data-category="wechat">公众号</button>
+          <button class="filter-btn px-4 py-1.5 bg-gray-800 rounded-lg transition-colors text-white text-sm" data-category="build">开源 / 比赛</button>
         </div>
       </div>
     </div>
@@ -1011,6 +1012,54 @@ onUnmounted(() => {
             <p class="text-gray-400 mb-3 text-sm">用 Codex 手搓一个轻量的喝水 + 活动定时提醒 Skill，只在电脑亮屏时计时，专治长时间久坐、缺水和脑子发胀，工作学习效率至少提高 2 倍。</p>
             <div class="flex flex-wrap gap-1.5 mb-4"><span class="text-xs bg-gray-800 text-accent px-2.5 py-0.5 rounded-full">26年</span><span class="text-xs bg-gray-800 text-accent px-2.5 py-0.5 rounded-full">公众号</span><span class="text-xs bg-gray-800 text-accent px-2.5 py-0.5 rounded-full">Skills</span></div>
             <a href="https://mp.weixin.qq.com/s/DZSohRTVNFrd6Fmicygtqg" target="_blank" class="text-accent inline-flex items-center text-sm">访问文章<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg></a>
+            <div class="flex justify-between items-center mt-4"><button class="text-gray-400 hover:text-white transition-colors"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" /></svg></button><button class="text-gray-400 hover:text-white transition-colors share-btn" title="复制链接"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" /></svg></button></div>
+          </div>
+        </div>
+
+        <!-- 项目: stephen-skills -->
+        <div class="project-card bg-gray-900 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300" data-category="build" data-year="year-26" data-date="2026-07-31">
+          <div class="h-48 md:h-56 overflow-hidden"><img :src="publicAsset('article_images/26.07.31-stephen-skills.jpg')" alt="stephen-skills" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"></div>
+          <div class="p-4 md:p-5">
+            <h3 class="text-xl font-bold mb-2">stephen-skills</h3>
+            <p class="text-gray-400 mb-3 text-sm">我自己真正高频使用、亲手制作和近期采纳的 15 个 AI Skills，涵盖 Skill 优化、Codex 工作流与日常效率工具，欢迎提交 PR。</p>
+            <div class="flex flex-wrap gap-1.5 mb-4"><span class="text-xs bg-gray-800 text-accent px-2.5 py-0.5 rounded-full">26年</span><span class="text-xs bg-gray-800 text-accent px-2.5 py-0.5 rounded-full">开源</span><span class="text-xs bg-gray-800 text-accent px-2.5 py-0.5 rounded-full">Skills</span></div>
+            <a href="https://github.com/Stephen-creater/stephen-skills" target="_blank" class="text-accent inline-flex items-center text-sm">查看仓库<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg></a>
+            <div class="flex justify-between items-center mt-4"><button class="text-gray-400 hover:text-white transition-colors"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" /></svg></button><button class="text-gray-400 hover:text-white transition-colors share-btn" title="复制链接"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" /></svg></button></div>
+          </div>
+        </div>
+
+        <!-- 项目: 归潮 Returning Tide · AdventureX 2026 铜奖 -->
+        <div class="project-card bg-gray-900 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300" data-category="build" data-year="year-26" data-date="2026-07-26">
+          <div class="h-48 md:h-56 overflow-hidden"><img :src="publicAsset('article_images/26.07.26-adventurex-returning-tide.jpg')" alt="归潮 Returning Tide · AdventureX 2026 铜奖" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"></div>
+          <div class="p-4 md:p-5">
+            <h3 class="text-xl font-bold mb-2">归潮 Returning Tide · AdventureX 2026 铜奖</h3>
+            <p class="text-gray-400 mb-3 text-sm">面向福建老酒出海的 AI 原型：我负责 AI 广告视频生产 Skills，从海外广告库找模板、拆分镜到复刻成片与质检，形成完整生产闭环。</p>
+            <div class="flex flex-wrap gap-1.5 mb-4"><span class="text-xs bg-gray-800 text-accent px-2.5 py-0.5 rounded-full">26年</span><span class="text-xs bg-gray-800 text-accent px-2.5 py-0.5 rounded-full">比赛</span><span class="text-xs bg-gray-800 text-accent px-2.5 py-0.5 rounded-full">铜奖</span><span class="text-xs bg-gray-800 text-accent px-2.5 py-0.5 rounded-full">AI 视频</span></div>
+            <a href="https://culture-insight-lab.fantasoday.workers.dev/" target="_blank" class="text-accent inline-flex items-center text-sm">访问作品<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg></a>
+            <div class="flex justify-between items-center mt-4"><button class="text-gray-400 hover:text-white transition-colors"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" /></svg></button><button class="text-gray-400 hover:text-white transition-colors share-btn" title="复制链接"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" /></svg></button></div>
+          </div>
+        </div>
+
+        <!-- 项目: Learn Claude Code 中文导学 -->
+        <div class="project-card bg-gray-900 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300" data-category="build" data-year="year-26" data-date="2026-06-07">
+          <div class="h-48 md:h-56 overflow-hidden"><img :src="publicAsset('article_images/26.06.07-learn-claude-code-cn.jpg')" alt="Learn Claude Code 中文导学" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"></div>
+          <div class="p-4 md:p-5">
+            <h3 class="text-xl font-bold mb-2">Learn Claude Code 中文导学</h3>
+            <p class="text-gray-400 mb-3 text-sm">基于 Learn Claude Code 二次开发的中文学习版：四个学习阶段切换，接入 MiniMax 与仓库知识库检索，边读教程边在本地问 AI。</p>
+            <div class="flex flex-wrap gap-1.5 mb-4"><span class="text-xs bg-gray-800 text-accent px-2.5 py-0.5 rounded-full">26年</span><span class="text-xs bg-gray-800 text-accent px-2.5 py-0.5 rounded-full">开源</span><span class="text-xs bg-gray-800 text-accent px-2.5 py-0.5 rounded-full">Claude Code</span></div>
+            <a href="https://github.com/Stephen-creater/learn-claude-code-cn-tutor" target="_blank" class="text-accent inline-flex items-center text-sm">查看仓库<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg></a>
+            <div class="flex justify-between items-center mt-4"><button class="text-gray-400 hover:text-white transition-colors"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" /></svg></button><button class="text-gray-400 hover:text-white transition-colors share-btn" title="复制链接"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" /></svg></button></div>
+          </div>
+        </div>
+
+        <!-- 项目: 问对——问对问题，遇见专家 -->
+        <div class="project-card bg-gray-900 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300" data-category="build" data-year="year-26" data-date="2026-01-18">
+          <div class="h-48 md:h-56 overflow-hidden"><img :src="publicAsset('article_images/26.01.18-wendui.jpg')" alt="问对——问对问题，遇见专家" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"></div>
+          <div class="p-4 md:p-5">
+            <h3 class="text-xl font-bold mb-2">问对——问对问题，遇见专家</h3>
+            <p class="text-gray-400 mb-3 text-sm">黑客松作品：一个 Skills 原生的对话产品，帮普通人把重复的提问沉淀为可复用的 Skill，在对话中直接调用。</p>
+            <div class="flex flex-wrap gap-1.5 mb-4"><span class="text-xs bg-gray-800 text-accent px-2.5 py-0.5 rounded-full">26年</span><span class="text-xs bg-gray-800 text-accent px-2.5 py-0.5 rounded-full">比赛</span><span class="text-xs bg-gray-800 text-accent px-2.5 py-0.5 rounded-full">黑客松</span><span class="text-xs bg-gray-800 text-accent px-2.5 py-0.5 rounded-full">Skills</span></div>
+            <a href="https://the-question-beryl.vercel.app" target="_blank" class="text-accent inline-flex items-center text-sm">访问作品<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg></a>
             <div class="flex justify-between items-center mt-4"><button class="text-gray-400 hover:text-white transition-colors"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" /></svg></button><button class="text-gray-400 hover:text-white transition-colors share-btn" title="复制链接"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" /></svg></button></div>
           </div>
         </div>

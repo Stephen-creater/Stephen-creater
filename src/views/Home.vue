@@ -16,7 +16,7 @@ const exploreCards = [
     number: '02',
     label: 'knowledge',
     title: '知识库',
-    description: '进入我持续整理的 AI、工作流、写作与方法沉淀。',
+    description: '进入我持续整理的 11 个知识板块：AI、项目、日常记录与方法沉淀。',
     to: '/knowledge',
   },
   {
@@ -26,6 +26,12 @@ const exploreCards = [
     description: '看看我在电影、漫威和个人表达里的另一面。',
     to: '/interests',
   },
+]
+
+const nowItems = [
+  { label: '工作', text: '以 AI FDE 的方式，在 AI 创业团队做业务落地：内容自动化与 AI 课程。' },
+  { label: '开源', text: '维护 stephen-skills，沉淀我自己高频使用的 15 个 AI Skills。', href: 'https://github.com/Stephen-creater/stephen-skills' },
+  { label: '写作', text: '持续输出 Harness Engineering、Skills、Agent 与 AI 产品的思考。', to: '/portfolio' },
 ]
 
 let heroTimeline = null
@@ -75,14 +81,14 @@ onMounted(() => {
   heroTimeline.fromTo(
     illustration,
     {
-      x: -26,
+      x: 16,
       y: 20,
       opacity: 0,
       rotate: 5,
       filter: 'blur(14px)',
     },
     {
-      x: -50,
+      x: 0,
       y: 0,
       opacity: 1,
       rotate: 2,
@@ -110,10 +116,11 @@ onUnmounted(() => {
               把技术做成<br>
               <span class="home-hero__title-accent">人能感受的体验。</span>
             </h1>
-            <p class="home-hero__microcopy">AI 产品 · 前端设计 · 内容表达</p>
+            <p class="home-hero__microcopy">叶耀楠<span>·</span>AI FDE &amp; AI PM<span>·</span>杭电 27 届</p>
             <div class="home-hero__actions">
-              <a href="https://my.feishu.cn/wiki/KRCGwl4MniNsyBkszBgcXCM3nwg" target="_blank" rel="noreferrer" class="btn btn-primary">查看个人说明书 →</a>
-              <router-link to="/contact" class="home-text-link">联系我</router-link>
+              <a href="https://my.feishu.cn/wiki/KRCGwl4MniNsyBkszBgcXCM3nwg" target="_blank" rel="noreferrer" class="home-hero__cta">
+                阅读个人说明书<span aria-hidden="true">→</span>
+              </a>
             </div>
           </div>
 
@@ -126,6 +133,24 @@ onUnmounted(() => {
             />
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="home-section home-now">
+      <div class="container">
+        <div class="explore-index__header">
+          <span class="explore-index__eyebrow">Now</span>
+          <div class="explore-index__rule"></div>
+          <span class="home-now__date">2026.09</span>
+        </div>
+        <ul class="home-now__list">
+          <li v-for="item in nowItems" :key="item.label" class="home-now__item">
+            <span class="home-now__label">{{ item.label }}</span>
+            <a v-if="item.href" :href="item.href" target="_blank" rel="noreferrer" class="home-now__text home-now__text--link">{{ item.text }}</a>
+            <router-link v-else-if="item.to" :to="item.to" class="home-now__text home-now__text--link">{{ item.text }}</router-link>
+            <span v-else class="home-now__text">{{ item.text }}</span>
+          </li>
+        </ul>
       </div>
     </section>
 

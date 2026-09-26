@@ -1,37 +1,38 @@
 <template>
   <footer>
-    <div class="container mx-auto px-4">
-      <div class="grid md:grid-cols-3 gap-8">
-        <div>
-          <h3 class="text-xl font-bold mb-4">Stephen<span class="site-brand__dot">·</span><span class="text-accent">叶耀楠</span></h3>
-          <p>探索、创造与无限可能</p>
-        </div>
-
-        <div>
-          <h4 class="text-lg font-medium mb-4">快速导航</h4>
-          <ul class="space-y-2">
-            <li><router-link to="/">首页</router-link></li>
-            <li><router-link to="/portfolio">作品</router-link></li>
-            <li><router-link to="/knowledge">知识库</router-link></li>
-            <li><router-link to="/interests">兴趣</router-link></li>
-            <li><router-link to="/contact">联系我</router-link></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="text-lg font-medium mb-4">联系方式</h4>
-          <ul class="space-y-2">
-            <li>邮箱: yaonanye1@gmail.com</li>
-            <li>微信: thanoswillreturn</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="mt-8 pt-8 border-t border-gray-800 text-center">
-        <p class="text-sm">
-          &copy; 2026 Stephen·叶耀楠. All rights reserved.
-        </p>
-      </div>
+    <div class="container site-footer">
+      <p class="site-footer__copy">&copy; 2026 Stephen<span class="site-brand__dot">·</span>叶耀楠</p>
+      <nav class="site-footer__links" aria-label="外部链接">
+        <a href="mailto:yaonanye1@gmail.com">邮箱</a>
+        <a href="https://github.com/Stephen-creater" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://my.feishu.cn/wiki/KRCGwl4MniNsyBkszBgcXCM3nwg" target="_blank" rel="noreferrer">个人说明书</a>
+        <span>公众号 · AI产品Stephen</span>
+      </nav>
     </div>
   </footer>
 </template>
+
+<style>
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+}
+
+.site-footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.6rem;
+}
+
+footer .site-footer__links a {
+  transition: color 180ms ease;
+}
+
+footer .site-footer__links a:hover {
+  color: var(--accent-orange) !important;
+}
+</style>
